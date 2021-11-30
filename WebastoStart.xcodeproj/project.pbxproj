@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C15A21D2743F9DB009F258C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A21C2743F9DB009F258C /* AppDelegate.swift */; };
 		2C15A21F2743F9DB009F258C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A21E2743F9DB009F258C /* SceneDelegate.swift */; };
-		2C15A2212743F9DB009F258C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A2202743F9DB009F258C /* ViewController.swift */; };
+		2C15A2212743F9DB009F258C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C15A2202743F9DB009F258C /* MainViewController.swift */; };
 		2C15A2242743F9DB009F258C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A2222743F9DB009F258C /* Main.storyboard */; };
 		2C15A2262743F9DD009F258C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A2252743F9DD009F258C /* Assets.xcassets */; };
 		2C15A2292743F9DD009F258C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C15A2272743F9DD009F258C /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		2C15A2192743F9DB009F258C /* WebastoStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebastoStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C15A21C2743F9DB009F258C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C15A21E2743F9DB009F258C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C15A2202743F9DB009F258C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C15A2202743F9DB009F258C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2C15A2232743F9DB009F258C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C15A2252743F9DD009F258C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C15A2282743F9DD009F258C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,47 @@
 		2C15A21B2743F9DB009F258C /* WebastoStart */ = {
 			isa = PBXGroup;
 			children = (
-				2C15A21C2743F9DB009F258C /* AppDelegate.swift */,
-				2C15A21E2743F9DB009F258C /* SceneDelegate.swift */,
-				2C15A2202743F9DB009F258C /* ViewController.swift */,
-				2C15A2222743F9DB009F258C /* Main.storyboard */,
-				2C15A2252743F9DD009F258C /* Assets.xcassets */,
-				2C15A2272743F9DD009F258C /* LaunchScreen.storyboard */,
-				2C15A22A2743F9DD009F258C /* Info.plist */,
+				2CA9540F275689BA009DBE2B /* ViewCintrollers */,
+				2CA9541027568AB6009DBE2B /* View */,
+				2CA9541127568B01009DBE2B /* Supports */,
+				2CA9541227568B22009DBE2B /* Resources */,
 			);
 			path = WebastoStart;
+			sourceTree = "<group>";
+		};
+		2CA9540F275689BA009DBE2B /* ViewCintrollers */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A2202743F9DB009F258C /* MainViewController.swift */,
+			);
+			path = ViewCintrollers;
+			sourceTree = "<group>";
+		};
+		2CA9541027568AB6009DBE2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A2222743F9DB009F258C /* Main.storyboard */,
+				2C15A2272743F9DD009F258C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CA9541127568B01009DBE2B /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A21C2743F9DB009F258C /* AppDelegate.swift */,
+				2C15A21E2743F9DB009F258C /* SceneDelegate.swift */,
+				2C15A22A2743F9DD009F258C /* Info.plist */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		2CA9541227568B22009DBE2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C15A2252743F9DD009F258C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C15A2212743F9DB009F258C /* ViewController.swift in Sources */,
+				2C15A2212743F9DB009F258C /* MainViewController.swift in Sources */,
 				2C15A21D2743F9DB009F258C /* AppDelegate.swift in Sources */,
 				2C15A21F2743F9DB009F258C /* SceneDelegate.swift in Sources */,
 			);
@@ -291,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B66N983M7Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WebastoStart/Info.plist;
+				INFOPLIST_FILE = WebastoStart/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +352,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B66N983M7Q;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WebastoStart/Info.plist;
+				INFOPLIST_FILE = WebastoStart/Supports/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
